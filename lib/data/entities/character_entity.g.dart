@@ -8,10 +8,12 @@ part of 'character_entity.dart';
 
 Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
       name: json['name'] as String,
+      id: json['id'] as int,
     );
 
 Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
       'name': instance.name,
+      'id': instance.id,
     };
 
 CharacterPagination _$CharacterPaginationFromJson(Map<String, dynamic> json) =>

@@ -4,11 +4,11 @@ import 'package:flutter_biderectional_pagination/pages/home_page.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends HookWidget {
-   MyApp({super.key});
+  MyApp({super.key});
 
   final diInitializer = DiInitializer();
 
@@ -25,7 +25,7 @@ class MyApp extends HookWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

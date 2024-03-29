@@ -6,8 +6,12 @@ part 'character_entity.g.dart';
 @JsonSerializable()
 class Character {
   final String name;
+  final int id;
 
-  Character({required this.name});
+  Character({
+    required this.name,
+    required this.id,
+  });
 
   factory Character.fromJson(Map<String, dynamic> json) =>
       _$CharacterFromJson(json);

@@ -5,7 +5,7 @@ part 'info_entity.g.dart';
 @JsonSerializable()
 class Info {
   final int? pages;
-  
+
   Info({
     this.pages,
   });
